@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment</title>
+</head>
+<body>
+
+<!-- Start of the test -->
+<!-- User's name input field -->
+<label for="name">Name:</label>
+<input type="text" id="name" name="name"><br><br>
+
+<!-- Multiple-choice questions -->
+<p>1. What is 10-5?</p>
+<input type="radio" id="5" name="=" value="5">
+<label for="5">5</label><br>
+<input type="radio" id="2" name="=" value="2">
+<label for="2">2</label><br>
+<input type="radio" id="8" name="=" value="8">
+<label for="8">8</label><br><br>
+
+<p>2. Whats 2+2-1?</p>
+<input type="radio" id="3" name="=" value="3">
+<label for="3">3</label><br>
+<input type="radio" id="0" name="=" value="0">
+<label for="0">0</label><br>
+<input type="radio" id="13" name="=" value="13">
+<label for="13">13</label><br><br>
+
+<p>3. 2x4?</p>
+<input type="radio" id="0" name="=" value="0">
+<label for="0">0</label><br>
+<input type="radio" id="101" name="=" value="101">
+<label for="101">101</label><br>
+<input type="radio" id="8" name="=" value="8">
+<label for="8">8</label><br><br>
+
+<!-- Word problem with a multiline text area -->
+<p>4. A fruit vendor has 20 apples. If he sells 6 apples, how many apples does he have left?</p>
+<textarea id="apples_left" rows="4" cols="50"></textarea><br><br>
+
+<!-- Math symbols -->
+<p>5. Calculate the area of a rectangle:</p>
+<ul>
+    <li>Length: <input type="text" id="length"></li>
+    <li>Width: <input type="text" id="width"></li>
+</ul>
+
+<!-- Submit button -->
+<button onclick="submitTest()">Submit</button>
+
+<!-- End of the test -->
+
+<script>
+    function submitTest() {
+        // Get the user inputs
+        var name = document.getElementById("name").value;
+        var capital = document.querySelector('input[name="capital"]:checked').value;
+        var painter = document.querySelector('input[name="painter"]:checked').value;
+        var planet = document.querySelector('input[name="planet"]:checked').value;
+        var applesLeft = document.getElementById("apples_left").value;
+        var length = document.getElementById("length").value;
+        var width = document.getElementById("width").value;
+        var radius = document.getElementById("radius").value;
+        var equationSolution = document.getElementById("equation_solution").value;
+        
+        // Display the results or process the answers further if needed
+        // ...
+    }
+</script>
+
+</body>
+</html>
